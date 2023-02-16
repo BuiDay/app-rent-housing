@@ -1,6 +1,6 @@
 import './App.css';
 import {Routes, Route ,BrowserRouter} from 'react-router-dom'
-import { Header, Home, Login, Navigation } from './container/Public';
+import { Header, Home, Login, Navigation,Register } from './container/Public';
 import { path } from './utils/constant';
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
         <Routes>
           <Route path={path.HOME} element={<Home/>} >
             <Route path={path.LOGIN} element = {<Login/>} />
+            <Route path={path.REGISTER} element = {<Register/>} />
           </Route>
         </Routes>
       </BrowserRouter>
